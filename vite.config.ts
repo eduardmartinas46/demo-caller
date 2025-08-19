@@ -7,4 +7,12 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
+
+  export default {
+  build: {
+    rollupOptions: {
+      external: ['src/main.tsx']
+    }
+  }
+}
 });
